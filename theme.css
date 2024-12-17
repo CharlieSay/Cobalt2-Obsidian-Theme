@@ -1,0 +1,131 @@
+/* Cobalt2 Theme for Obsidian */
+/* Based on the VSCode Cobalt2 theme by Wes Bos */
+
+:root {
+  --input-focus-border-color: #ffc600;
+  --input-hover-border-color: #0088ff;
+}
+
+body {
+  --font-text-theme: 'Menlo', 'Monaco', monospace;
+  --font-size-primary: 14px;
+  --line-height-primary: 1.5;
+}
+
+.theme-dark {
+  /* Main colors */
+  --background-primary: #193549;
+  --background-secondary: #0d3a58;
+  --background-secondary-alt: #0d3a58;
+
+  /* Text colors */
+  --text-normal: #ffffff;
+  --text-muted: #aaaaaa;
+  --text-faint: #666666;
+
+  /* Headers */
+  --text-title-h1: #ffc600;
+  --text-title-h2: #ff9d00;
+  --text-title-h3: #ff9d00;
+  --text-title-h4: #ffc600;
+  --text-title-h5: #ffc600;
+  --text-title-h6: #ffc600;
+
+  /* Links and accents */
+  --text-link: #0088ff;
+  --text-accent: #ffc600;
+  --text-accent-hover: #ff9d00;
+
+  /* Interactive elements */
+  --interactive-accent: #ffc600;
+  --interactive-accent-hover: #ff9d00;
+
+  /* Code blocks */
+  --code-background: #0d3a58;
+  --code-normal: #ffffff;
+  --code-comment: #0088ff;
+  --code-function: #ffc600;
+  --code-keyword: #ff9d00;
+  --code-string: #a5ff90;
+
+  /* UI elements */
+  --scrollbar-bg: #193549;
+  --scrollbar-thumb-bg: #0d3a58;
+  --highlight-bg: #0050a4;
+
+  /* Graphs */
+  --graph-bg: #193549;
+  --graph-line: #0088ff;
+  --graph-node: #ffc600;
+  --graph-node-tag: #ff9d00;
+  --graph-node-attachment: #a5ff90;
+}
+
+.theme-light {
+  /* Light theme - using slightly muted versions of the dark theme colors */
+  --background-primary: #fafafa;
+  --background-secondary: #f2f2f2;
+  --background-secondary-alt: #e6e6e6;
+
+  --text-normal: #193549;
+  --text-muted: #666666;
+  --text-faint: #999999;
+
+  --text-title-h1: #193549;
+  --text-title-h2: #0d3a58;
+  --text-title-h3: #0d3a58;
+  --text-title-h4: #193549;
+  --text-title-h5: #193549;
+  --text-title-h6: #193549;
+
+  --text-link: #0088ff;
+  --text-accent: #ffc600;
+  --text-accent-hover: #ff9d00;
+
+  --interactive-accent: #ffc600;
+  --interactive-accent-hover: #ff9d00;
+
+  --code-background: #f2f2f2;
+  --code-normal: #193549;
+  --code-comment: #0088ff;
+  --code-function: #ff9d00;
+  --code-keyword: #ff9d00;
+  --code-string: #008000;
+}
+
+/* Custom styling for specific elements */
+.markdown-preview-view code {
+  color: var(--code-normal);
+  background-color: var(--code-background);
+}
+
+.markdown-preview-view pre {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: var(--code-background);
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  font-weight: 600;
+}
+
+/* Links */
+.markdown-preview-view a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+.markdown-preview-view a:hover {
+  text-decoration: underline;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--highlight-bg);
+  color: #ffffff;
+}

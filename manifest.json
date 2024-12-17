@@ -1,0 +1,9 @@
+{
+    "name": "Cobalt2",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "author": "Charlie Say",
+    "authorUrl": "https://github.com/charliesay",
+    "description": "A port of Wes Bos's Cobalt2 theme for Obsidian",
+    "license": "MIT"
+}
